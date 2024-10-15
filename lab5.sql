@@ -50,7 +50,7 @@ select count(*) from customers where cust_name is not null;
 select min(purch_amt) from orders;
 
 -- #7
-select from customers where cust_name like '&b';
+select from customers where cust_name like '%b';
 
 -- #8
 select * from orders where customer_id in (select customer_id from customers where city = 'New York');
